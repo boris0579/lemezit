@@ -1,0 +1,15 @@
+.video-block {
+    width: 50%;
+    margin: 0 auto;
+    height: auto;
+
+    &__iframe {
+        border-radius: 1rem;
+        aspect-ratio: 2 / 1;
+    }
+
+    @media (max-width: 900px) {
+        // 768px
+        width: 100%;
+    }
+}

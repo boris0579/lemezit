@@ -1,0 +1,26 @@
+.reviews-page {
+    padding-top: 1.875rem; // 30px 0 80px
+
+    @media (max-width: 48rem) {
+        // 768px
+        padding-top: 1rem; // 16px 0 48px
+    }
+
+    &__container {
+        display: grid;
+        grid-template-columns: repeat(4, 1fr);
+        gap: 2rem; // 32px
+
+        @media (max-width: 71.875rem) {
+            // 1150px
+            grid-template-columns: repeat(2, 1fr);
+            gap: 1rem; // 16px
+        }
+
+        @media (max-width: 48rem) {
+            // 768px
+            grid-template-columns: auto;
+            gap: 1.5rem; //24px
+        }
+    }
+}
