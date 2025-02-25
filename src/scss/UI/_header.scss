@@ -57,6 +57,12 @@
             width: 13.25rem; // 212px
             height: 2.9375rem; // 47px
         }
+
+        @media (max-width: 34.375rem) {
+            // 550px
+            width: 11.25rem; // 180px
+            height: 2.4375rem; // 39px
+        }
     }
 
     &__right {
