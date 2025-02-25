@@ -36,11 +36,27 @@
 
     &__logo-link {
         display: flex;
-    }
+        background-image: url("../assets/icons/logo-desktop.svg");
+        background-size: contain;
+        background-repeat: no-repeat;
+        flex-shrink: 0;
+        width: 14.8125rem; // 237px
+        height: 4.625rem; // 74px
+        position: relative;
+        top: -0.625rem;
 
-    &__logo-img {
-        width: 14.375rem; // 230px
-        height: 4.6875rem; // 75px
+        @media (max-width: 70.625rem) {
+            // 1130px
+            width: 11.8125rem;
+            top: 0;
+        }
+
+        @media (max-width: 64rem) {
+            // 1024px
+            background-image: url("../assets/icons/logo-mobile.svg");
+            width: 13.25rem; // 212px
+            height: 2.9375rem; // 47px
+        }
     }
 
     &__right {
@@ -139,17 +155,6 @@
                 &--top {
                     white-space: unset;
                 }
-            }
-        }
-
-        &__logo-img {
-            width: 12.5rem; // 200px
-            height: auto;
-
-            @media (max-width: 70.625rem) {
-                // 1130px
-                width: 9.375rem; // 150px
-                height: auto;
             }
         }
 
